@@ -1,0 +1,98 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	color: #333652;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 1.5rem;
+	font-weight: normal;
+}
+
+h1 {
+	font-weight: 700;
+	text-align: center;
+	font-size: 3rem;
+}
+
+h2 {
+	font-weight: 700;
+	text-align: center;
+	font-size: 2rem;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	width: 50%;
+}
+
+/* NAVIGATION BAR */
+
+.nav {
+	display: flex;
+	justify-content: flex-end;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #90adc6;
+}
+
+.nav li {
+	display: inline-block;
+	margin-right: 2rem;
+    width: auto;
+    height: inherit;
+}
+
+@media (max-width: 28.75em) {
+	.nav {
+		justify-content: center;
+	}
+
+	.nav-list {
+		margin: 0 1rem;
+	}
+}
+
+.nav-list a {
+	display: block;
+	padding: 1rem;
+}
+
+.nav-list a:hover {
+	background: #fad02c;
+	width: 100%;
+}
+
+/* WELCOME SECTION */
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #e9eaec;
+
+}
